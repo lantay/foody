@@ -18,13 +18,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Foody</a>
+      <%= link_to 'Foody', root_path, class: 'navbar-brand' %>
+      <!--used root_path instead of a url because haven't set up a url yet-=->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li>
+          <%= link_to new_place_path do
+           %>
+           <i class="glyphicon glyphicon-plus"></i>
+           New Place
+           <% end %>
+
+           <!--to use the links from rake routes, add _path to whatever the one it is you want. In this case, we wanted new_place-->
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Link</a></li>
