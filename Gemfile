@@ -10,6 +10,7 @@ gem 'rails_12factor', group: :production
 gem "geocoder", "1.3.4"
 gem "figaro", ">=1.0.0"
 gem 'carrierwave', '0.10.0'
+gem 'fog'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
